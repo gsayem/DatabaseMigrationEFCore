@@ -62,6 +62,7 @@ namespace DataMigration.App
         CoreTypeMappingDerive _coreTypeMappingDerive = null;
         public TypeMapper()
         {
+            //Error will occurred if this below line will uncomment; Need to more investigation, how to implement the FindMapping methods 
             //_coreTypeMappingDerive = new CoreTypeMappingDerive();
         }
 
@@ -71,7 +72,7 @@ namespace DataMigration.App
         }
 
         public CoreTypeMapping FindMapping(MemberInfo member)
-        {            
+        {
             return _coreTypeMappingDerive;
         }
 
